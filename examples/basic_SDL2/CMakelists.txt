@@ -1,0 +1,13 @@
+set(EXAMPLE_NAME "basic_SDL2")
+
+add_executable(${EXAMPLE_NAME} main.cc)
+if(NOT EMSCRIPTEN)
+    find_package(SDL2 CONFIG REQUIRED)
+    target_link_libraries(${EXAMPLE_NAME}
+        PRIVATE
+        $<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>
+        $<IF:$<TARGET_EXISTS:SDL2::SDL2>,SDL2::SDL2,SDL2::SDL2-static>
+    ) 
+else()
+    target_link_libraries(${EXAMPLE_NAME} PRIVATE ${SDL2_LIBRARIES} ${FREETYPE_LIBRARIES})
+endif()

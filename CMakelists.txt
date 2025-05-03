@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.30)
+project(cpp_cmake_vcpkg_emscripten_template)
+
+include(${PROJECT_SOURCE_DIR}/cmake/cxx_version.cmake)
+
+add_subdirectory(examples)
+

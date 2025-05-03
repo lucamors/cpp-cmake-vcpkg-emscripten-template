@@ -1,0 +1,9 @@
+{
+  "name": "my-raylib-project",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "sdl2"
+  ],
+  "overrides": [],
+  "builtin-baseline": "b02e341c927f16d991edbd915d8ea43eac52096c"
+}
