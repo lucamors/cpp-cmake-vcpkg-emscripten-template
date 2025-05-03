@@ -1,0 +1,16 @@
+{
+  "name": "cpp-cmake-vcpkg-emscripten-template",
+  "version": "1.0.0",
+  "description": "**cpp-cmake-vcpkg-emscripten** is a C++ project template designed for **cross-platform development**. It leverages **CMake** as the build system, **vcpkg** for dependency management, and **Emscripten** for WebAssembly (WASM) compilation. This template supports both **Windows** (via **MSVC**) and **WebAssembly** (via **Emscripten**) targets, providing a streamlined setup for modern C++ applications.",
+  "main": "commitlint.config.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "husky": "^9.1.7"
+  }
+}
