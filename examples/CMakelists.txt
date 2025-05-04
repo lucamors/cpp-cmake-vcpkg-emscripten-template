@@ -1,1 +1,2 @@
 add_subdirectory(basic_SDL2)
+add_subdirectory(work_with_images_SDL2)
