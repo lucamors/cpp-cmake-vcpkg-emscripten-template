@@ -51,8 +51,7 @@
         "CMAKE_C_COMPILER": "emcc",
         "CMAKE_CXX_COMPILER" : "em++",
         "CMAKE_CXX_FLAGS": "-Wall -Wextra",
-        "CMAKE_EXECUTABLE_SUFFIX": ".html",
-        "CMAKE_EXE_LINKER_FLAGS": "--use-port=sdl2 -s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 -s ASYNCIFY -s GL_ENABLE_GET_PROC_ADDRESS=1"
+        "CMAKE_EXECUTABLE_SUFFIX": ".html"
       }
     }
   ],
