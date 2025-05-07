@@ -2,7 +2,15 @@
   "version": 8,
   "configurePresets": [
     {
+      "name": "common",
+      "hidden": true,
+      "cacheVariables": {
+        "CMAKE_MODULE_PATH": "${sourceDir}/cmake/"
+      }
+    },
+    {
       "name": "debug",
+      "inherits": "common",
       "displayName": "Debug",
       "generator": "Visual Studio 17 2022",
       "binaryDir": "build/debug",
@@ -25,6 +33,7 @@
     },
     {
       "name": "release",
+      "inherits": "common",
       "displayName": "Release",
       "generator": "Visual Studio 17 2022",
       "binaryDir": "build/release",
@@ -38,6 +47,7 @@
     },
     {
       "name": "Emscripten",
+      "inherits": "common",
       "displayName": "Emscripten",
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/build/web",
