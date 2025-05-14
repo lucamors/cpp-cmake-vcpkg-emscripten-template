@@ -1,5 +1,5 @@
 {
-  "name": "my-raylib-project",
+  "name": "cpp-cmake-vcpkg-emscripten-template",
   "version-string": "0.1.0",
   "dependencies": [
     "sdl2",
