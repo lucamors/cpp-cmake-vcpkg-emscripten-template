@@ -27,4 +27,4 @@ endif()
 # Assets ------------------------------------------------------------------------------------------
 set(ASSET_SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/assets)
 file(COPY ${ASSET_SOURCE_DIR} DESTINATION ${CMAKE_BINARY_DIR})
-add_compile_definitions(ASSETS_DIR="/assets")
+add_compile_definitions(ASSETS_DIR="${CMAKE_BINARY_DIR}/assets")
